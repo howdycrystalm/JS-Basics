@@ -1,12 +1,10 @@
-//////////////////PROBLEM 1////////////////////
+//////////////////PROBLEM 1////////////////////  
 
-var name = 'Tyler';
 //Create a function called isTyler that accepts name as 
 //it's only parameter.
-//If the argument you passed in is equal to 'Tyler', 
-//return true. If it's not, return false.
-function isTyler(name) {
-  if (name === "Tyler") {
+
+function isTyler(name){
+  if (name === 'Tyler') {
     return true;
   }
   else {
@@ -14,6 +12,9 @@ function isTyler(name) {
   }
 }
 isTyler("Tyler");
+//If the argument you passed in is equal to 'Tyler', 
+//return true. If it's not, return false.
+
 
 //////////////////PROBLEM 2////////////////////
 
@@ -21,13 +22,15 @@ isTyler("Tyler");
 //Create a function called getName that uses prompt() to prompt the user for their name, 
 //then returns the name.
 
-
-function getName() {
-  var storeName = prompt("gimme your name");
-  return storeName;
+function getName(){
+  var ask = prompt("whats your handle?")
+  return ask;
 }
 
 getName();
+
+
+
 //////////////////PROBLEM 3////////////////////
 
 
@@ -35,10 +38,9 @@ getName();
 //Create a function called welcome that uses your getName function you created in 
 //the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
-
-function welcome() {
-  var usersName = getName();
-  alert("Welcome, " + usersName);
+function welcome(){
+  var ask2 = getName();
+    alert("Welcome, " + ask2);
 }
 
 welcome();
@@ -69,13 +71,7 @@ welcome();
 
 //Create a function called myName that returns your name
 
-function myName() {
-  return "Crystal";
-}
 
-var newMyName = myName;
-
-alert(newMyName());
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
@@ -84,19 +80,17 @@ alert(newMyName());
 
 //Now alert the result of invoking newMyName
 
+function myName() {
+  return "Crystal";
+}
+
+var newMyName = myName;
+
+alert(newMyName());
 
 
 //////////////////PROBLEM 7////////////////////
 
-function outerFn() {
-  return function() {
-    return "Crystal";
-  }
-}
-
-var innerFn = outerFn();
-
-innerFn();
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
@@ -107,9 +101,14 @@ innerFn();
 
 //Now invoke innerFn.
 
+function outerFn() {
+  return function(){
+    return "Quinn";
+  }
+}
 
-
-
+var innerFn = outerFn();
+innerFn();
 
 
 
